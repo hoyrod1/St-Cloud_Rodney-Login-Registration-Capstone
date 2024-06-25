@@ -42,10 +42,10 @@
   height: 20vh;
   background-color: rgba(67, 92, 72, 0.684);
   z-index: 10;
-  border: 2px solid rgb(116, 150, 56);
+  /* border: 2px solid rgb(116, 150, 56); */
   border-radius: 10px;
   margin: 50px auto;
-  box-shadow: 1px 1px 50px 1px rgba(255, 254, 254, 0.553);
+  box-shadow: 1px 1px 50px 1px rgba(6, 6, 6, 0.553);
 }
 
 /* .button-div {

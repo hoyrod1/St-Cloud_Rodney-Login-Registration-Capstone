@@ -1,0 +1,26 @@
+.showcases {
+  background-color: rgb(229, 229, 229);
+  background-image: url(../images/meditation.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+
+.containers {
+  background-color: rgba(4, 4, 3, 0.698);
+  width: 90%;
+  height: 80%;
+  margin: 80px auto;
+  padding: 25px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 50px 1px rgba(27, 27, 27, 0.553);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}

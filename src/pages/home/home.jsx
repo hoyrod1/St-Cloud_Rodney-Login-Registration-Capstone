@@ -1,9 +1,13 @@
 import Nav from "../includes/nav";
+import "./styles/home.css";
 function Home() {
   return (
-    <div>
+    <div className="showcases">
       <Nav />
-      <h1>Home Page</h1>
+      <hr />
+      <div className="containers">
+        <h1>Welcome home to Zion Fitness</h1>
+      </div>
     </div>
   );
 }

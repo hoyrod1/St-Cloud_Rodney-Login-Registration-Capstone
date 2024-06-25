@@ -5,13 +5,17 @@
 }
 
 nav {
+  background-color: rgba(4, 4, 3, 0.698);
+  border: 2px solid rgb(185, 184, 184);
+  border-radius: 8px;
   margin: 0 15px;
   display: flex;
   flex-direction: row;
   gap: 35px;
   align-items: center;
+  padding: 5px 15px;
 }
 
 nav a {
-  color: brown;
+  color: white;
 }
