@@ -1,0 +1,17 @@
+.nav {
+  /* background-color: aquamarine; */
+  /* gap: 15px; */
+  font-size: larger;
+}
+
+nav {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+}
+
+nav a {
+  color: brown;
+}
