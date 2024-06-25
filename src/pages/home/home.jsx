@@ -9,26 +9,33 @@ const Home = () => {
       <Nav />
       <hr />
       <div className="containers">
-        <h1>Welcome home to Zion Fitness</h1>
+        <h1>Welcome Home To Zion Fitness</h1>
         <div className="content">
           <div className="trainer-container">
             <div className="trainers">
               <div className="trainer">
-                <h4>Select from one of our Top Trainers</h4>
-                <p>Email them to schedule a live chat consultation</p>
+                <h4>Select from one of the Top Trainers in the country</h4>
+                <p>
+                  Please register or login so you can email one of our trainers
+                  and schedule a live chat consultation
+                </p>
                 <Link to="/trainers">
-                  <button type="submit">Get More Info</button>
+                  <button type="submit">
+                    Get More Info about our trainers
+                  </button>
                 </Link>
               </div>
 
               <div className="training-packages">
                 <h4>
-                  Select Or Create A Training Package to achieve Your Fitness
+                  Select or Create a Training Package to achieve Your Fitness
                   Goals
                 </h4>
-                <p>Each training package can be customized</p>
+                <p>Each training package can be customized to fit your goals</p>
                 <Link to="/trainingPackage">
-                  <button type="submit">Get More Info</button>
+                  <button type="submit">
+                    Get More Info about our training packages
+                  </button>
                 </Link>
               </div>
             </div>

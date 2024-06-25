@@ -1,0 +1,16 @@
+div.trainer-content {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.reg-log-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
