@@ -1,0 +1,45 @@
+.training-packages-containers {
+  background-color: rgba(4, 4, 3, 0.698);
+  width: 90%;
+  height: 80%;
+  margin: 60px auto;
+  padding: 25px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 50px 1px rgba(27, 27, 27, 0.553);
+  overflow: scroll;
+}
+
+.training-packages-content {
+  display: flex;
+  align-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+h3,
+h5 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px 0 0 0;
+}
+
+.training-packages {
+  display: flex;
+}
+
+.training-package {
+  width: 25vw;
+}
+
+.training-package p {
+  margin: 15px 0;
+  color: white;
+}
+
+.home-button[type="submit"] {
+  width: 50vw;
+}

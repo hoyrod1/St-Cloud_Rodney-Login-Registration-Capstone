@@ -6,7 +6,7 @@ import "./styles/trainer.css";
 const Trainer = () => {
   const { id } = useParams();
   const [trainer, setTrainer] = useState([]);
-  let singleTrainer;
+
   // useEffect for initial Mounting of API resource for a single trainer
   useEffect(() => {
     const url = `https://st-cloud-rodney-web-chat-app-2dbefe56daef.herokuapp.com/trainers/${id}`;

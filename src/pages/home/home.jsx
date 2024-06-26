@@ -26,13 +26,13 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className="training-packages">
+              <div className="home-training-packages">
                 <h4>
                   Select or Create a Training Package to achieve Your Fitness
                   Goals
                 </h4>
                 <p>Each training package can be customized to fit your goals</p>
-                <Link to="/trainingPackage">
+                <Link to="/training-packages">
                   <button type="submit">
                     Get More Info about our training packages
                   </button>

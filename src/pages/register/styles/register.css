@@ -1,0 +1,61 @@
+.form-box {
+  width: 50vw;
+  margin: 10% auto;
+}
+/*---------- IPUT CONTAINER ----------*/
+.input-box {
+  position: relative;
+}
+/*---------- ICON COLOR FILL ----------*/
+.reg-user-icon,
+.login-pic {
+  color: green;
+}
+.password-lock-icon,
+.password-lock-icon-2 {
+  color: red;
+}
+.email-icon {
+  color: rgb(98, 153, 174);
+}
+/*-------------------------------------*/
+
+/*---- REGISTRATION ICON POSITIONS ----*/
+.email-icon {
+  position: absolute;
+  right: 4%;
+  top: 26%;
+}
+
+.reg-user-icon {
+  position: absolute;
+  right: 4%;
+  top: 26%;
+}
+
+.password-lock-icon {
+  position: absolute;
+  right: 4%;
+  top: 25%;
+}
+
+.password-lock-icon-2 {
+  position: absolute;
+  right: 4%;
+  top: 26%;
+}
+/*-------------------------------------*/
+
+/*-------------------------------------*/
+/* Error Message */
+.error-message p {
+  color: red;
+}
+/*-------------------------------------*/
+
+/*-------------------------------------*/
+/* Success Message */
+.success-message p {
+  color: green;
+}
+/*-------------------------------------*/
