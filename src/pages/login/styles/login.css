@@ -1,0 +1,46 @@
+.register-a-link {
+  margin: 0 0 0 10px;
+  display: inline-block;
+  color: blue;
+}
+
+.login h2 {
+  color: rgb(46, 41, 41);
+  text-align: center;
+  text-decoration: underline;
+  margin: 35px 0;
+}
+
+.logged-container {
+  width: 50vw;
+  margin: 10% auto;
+}
+
+.logged-container h2 {
+  color: rgb(46, 41, 41);
+  text-align: center;
+  text-decoration: underline;
+  margin: 35px 0;
+}
+
+/*---------- ICON COLOR FILL ----------*/
+.login-pic {
+  color: green;
+}
+.login-lock-icon {
+  color: red;
+}
+/*-------------------------------------*/
+
+/*---- REGISTRATION ICON POSITIONS ----*/
+.login-pic {
+  position: absolute;
+  right: 4%;
+  top: 26%;
+}
+
+.login-lock-icon {
+  position: absolute;
+  right: 4%;
+  top: 25%;
+}

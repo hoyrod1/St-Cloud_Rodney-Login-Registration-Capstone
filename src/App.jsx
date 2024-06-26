@@ -19,6 +19,9 @@ function App() {
   // Set state for trainingPackage API endpoint
   const [trainingPackages, setTrainingPackages] = useState([]);
   //==========================================================================//
+  // Set state for Members API endpoint
+  const [members, setMembers] = useState([]);
+  //==========================================================================//
 
   //==========================================================================//
   // useEffect for initial Mounting of the trainers API resource //
@@ -42,6 +45,17 @@ function App() {
         setTrainingPackages(trainingPackage);
       });
   }, []);
+  //--------------------------------------------------------------------------//
+  // useEffect for initial Mounting of the members API resource //
+  useEffect(() => {
+    const url =
+      "https://st-cloud-rodney-web-chat-app-2dbefe56daef.herokuapp.com/members";
+    fetch(url)
+      .then((data) => data.json())
+      .then((member) => {
+        setMembers(member);
+      });
+  }, []);
   //==========================================================================//
 
   return (
@@ -50,7 +64,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="home" element={<Home />} />
         <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login members={members} />} />
         <Route path="/trainers" element={<Trainers trainers={trainers} />} />
         <Route path="/trainer/:id" element={<Trainer />} />
         <Route

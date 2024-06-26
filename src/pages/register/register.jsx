@@ -15,15 +15,13 @@ function Register() {
   //====================================================================//
   // STATE FOR PASSWORD INPUT
   const [registerPassword, setRegisterPassword] = useState("");
-  //================ CONFIRM-PASSWORD STATE =================//
+  //===================== CONFIRM-PASSWORD STATE =======================//
   // STATE FOR CONFIRM-PASSWORD INPUT
   const [matchRegisterPassword, setMatchRegisterPassword] = useState("");
-  //====================================================================//
-  //======================= ERR0R-SUCCESS STATE ========================//
+  //================ REGISTRATION-ERR0R-SUCCESS STATE ==================//
   const [registrationError, setRegistrationError] = useState("");
   const [registrationSuccess, setRegistrationSuccess] = useState("");
   //====================================================================//
-  //--------------------------------------------------------------------//
   // Registration Form
   const handleRegistrationSubmission = (e) => {
     e.preventDefault();
