@@ -1,14 +1,17 @@
 import * as React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Index from "./pages/index/index.jsx";
-import Home from "./pages/home/home.jsx";
-import Register from "./pages/register/register.jsx";
-import Login from "./pages/login/login.jsx";
-import Trainers from "./pages/trainers/trainers.jsx";
-import Trainer from "./pages/trainers/trainer.jsx";
-import TrainingPackages from "./pages/trainingPackages/trainingPackages.jsx";
-import TrainingPackage from "./pages/trainingPackages/trainingPackage.jsx";
+import Index from "./pages/index/Index.jsx";
+import Home from "./pages/home/Home.jsx";
+import Register from "./pages/register/Register.jsx";
+import Login from "./pages/login/Login.jsx";
+import Trainers from "./pages/trainers/Trainers.jsx";
+import Trainer from "./pages/trainers/Trainer.jsx";
+import TrainingPackages from "./pages/trainingPackages/TrainingPackages.jsx";
+import TrainingPackage from "./pages/trainingPackages/TrainingPackage.jsx";
+import Members from "./pages/members/Members.jsx";
+import Member from "./pages/members/Member.jsx";
+import UpdateDeleteProfile from "./pages/updateDeleteProfile/UpdateDeleteProfile.jsx";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -72,6 +75,12 @@ function App() {
           element={<TrainingPackages trainingPackages={trainingPackages} />}
         />
         <Route path="/training-packages/:id" element={<TrainingPackage />} />
+        <Route path="/members" element={<Members members={members} />} />
+        <Route path="/member/:id" element={<Member />} />
+        <Route
+          path="/update-delete-profile/:id"
+          element={<UpdateDeleteProfile />}
+        />
       </Routes>
     </BrowserRouter>
   );

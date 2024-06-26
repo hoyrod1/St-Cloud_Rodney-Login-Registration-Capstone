@@ -1,0 +1,27 @@
+.update-container {
+  background-color: rgba(4, 4, 3, 0.698);
+  width: 90%;
+  height: 60%;
+  margin: 80px auto;
+  padding: 25px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 50px 1px rgba(27, 27, 27, 0.553);
+}
+
+.update-form {
+  width: 75vw;
+  margin: auto;
+}
+
+.return-button[type="submit"] {
+  width: 50vw;
+}
+.delete-button[type="submit"] {
+  width: 50vw;
+}
+
+.delete-button-div {
+  margin: 0 auto;
+  width: 50vw;
+}

@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Nav from "../includes/nav.jsx";
+import Members from "../members/Members.jsx";
 import "./styles/login.css";
 
 const logInReducer = (state, action) => {
@@ -45,7 +46,7 @@ const logInReducer = (state, action) => {
   }
 };
 
-const LoginForm = () => {
+const LoginForm = ({ members }) => {
   const [state, dispatch] = useReducer(logInReducer, {
     loginUser: "",
     loginPassword: "",
@@ -57,11 +58,13 @@ const LoginForm = () => {
   // login form
   const handleLoginSubmission = (e) => {
     e.preventDefault();
+    // Get the password to local storage
+    let loacalPassword = localStorage.getItem("password");
 
     dispatch({ type: "login" });
 
     try {
-      if (state.loginUser === "hoyrod1" && state.loginPassword === "april12") {
+      if (state.loginPassword === loacalPassword) {
         dispatch({ type: "success" });
 
         state.loginUser = "";
@@ -82,13 +85,16 @@ const LoginForm = () => {
       {state.loginSuccess ? (
         <>
           <div className="logged-container">
-            <div>
-              <h2>{state.loginUser} you are logged in</h2>
+            <Members members={members} />
+            <div className="div-button">
+              <button
+                className="log-out"
+                type="submit"
+                onClick={() => dispatch({ type: "logOut" })}
+              >
+                Log Out
+              </button>
             </div>
-            <br />
-            <button type="submit" onClick={() => dispatch({ type: "logOut" })}>
-              Log Out
-            </button>
           </div>
         </>
       ) : (
