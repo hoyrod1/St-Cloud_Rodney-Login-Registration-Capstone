@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Nav from "../includes/nav";
 import "./styles/members.css";
 
 const Members = ({ members }) => {
   return (
     <div>
-      <Nav />
       <hr />
       <div className="members-containers">
         <h1>Welcome home to Zion Fitness Members page</h1>
