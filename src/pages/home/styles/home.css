@@ -63,31 +63,31 @@ p {
 /* Media Queries For the Home page */
 
 @media (max-width: 24em) {
+  div.content {
+    gap: 25px;
+  }
   .containers {
     background-color: rgba(4, 4, 3, 0.698);
-    width: 90%;
-    height: 55%;
+    width: 90vw;
+    height: 65vh;
   }
-  /* .showcase {
-    padding: 0;
+  .trainers {
+    gap: 10px;
+    width: 85vw;
+    height: 50vh;
   }
-  .container {
-    width: 75vw;
-    height: 15vh;
-    margin: 0 auto;
+
+  .trainer,
+  .home-training-packages {
+    height: 30%;
+    width: 80%;
   }
-  .button-div {
-    width: 60vw;
-    height: 4vh;
-    margin: 8px auto;
-    padding: 5px 1px;
-  } */
   h1 {
-    margin-top: 2px 0 0 0;
+    margin: 0;
     font-size: medium;
   }
   h4 {
-    margin: 20px 0;
+    margin: 5px 0;
     font-size: small;
   }
 
@@ -95,7 +95,11 @@ p {
     font-size: small;
   }
   button[type="submit"] {
-    width: 70vw;
+    height: 10%;
+    width: 69vw;
     font-size: small;
   }
+  /* button[type="submit"] a {
+    padding: 2px;
+  } */
 }
