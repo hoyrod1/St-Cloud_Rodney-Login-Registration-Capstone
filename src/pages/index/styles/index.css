@@ -96,10 +96,36 @@ a:hover {
     font-size: medium;
   }
   .button-div {
-    width: 50%;
+    width: 75%;
     padding: 5px 20px;
   }
   .anch-tag {
-    font-size: x-small;
+    font-size: small;
+  }
+}
+
+@media (max-width: 75em) {
+  .container {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 25em) {
+  .showcase {
+    padding: 0;
+  }
+  .container {
+    width: 70vw;
+    height: 20vh;
+    margin: 0 auto;
+  }
+  .button-div {
+    width: 60vw;
+    margin: 20px auto;
+    padding: 5px 1px;
+  }
+  h3 {
+    margin-top: 5px 0 0 0;
+    font-size: small;
   }
 }
