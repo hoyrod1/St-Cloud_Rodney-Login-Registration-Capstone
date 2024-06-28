@@ -59,3 +59,43 @@ h2 {
 p {
   text-align: center;
 }
+
+/* Media Queries For the Home page */
+
+@media (max-width: 24em) {
+  .containers {
+    background-color: rgba(4, 4, 3, 0.698);
+    width: 90%;
+    height: 55%;
+  }
+  /* .showcase {
+    padding: 0;
+  }
+  .container {
+    width: 75vw;
+    height: 15vh;
+    margin: 0 auto;
+  }
+  .button-div {
+    width: 60vw;
+    height: 4vh;
+    margin: 8px auto;
+    padding: 5px 1px;
+  } */
+  h1 {
+    margin-top: 2px 0 0 0;
+    font-size: medium;
+  }
+  h4 {
+    margin: 20px 0;
+    font-size: small;
+  }
+
+  p {
+    font-size: small;
+  }
+  button[type="submit"] {
+    width: 70vw;
+    font-size: small;
+  }
+}
