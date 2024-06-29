@@ -1,5 +1,85 @@
-h2 {
+.trainers-showcases {
+  background-color: rgb(229, 229, 229);
+  background-image: url(../../home/images/meditation.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+
+.trainers-containers {
+  background-color: rgba(4, 4, 3, 0.698);
+  width: 95%;
+  height: 80%;
+  margin: 25px auto;
+  padding: 25px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 50px 1px rgba(27, 27, 27, 0.553);
+  overflow: scroll;
+}
+
+.trainers-containers h1 {
+  margin: 0 auto;
+}
+
+div.trainers-content {
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.trainer-container {
+  padding: 10px;
+}
+
+.trainer-container h2 {
+  font-size: large;
+  margin: 10px auto;
+}
+
+.trainers-div {
+  padding: 10px;
+  display: flex;
+  gap: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 1px rgba(239, 236, 236, 0.553);
+}
+
+.trainer-container h2 {
   color: white;
   text-align: center;
   text-decoration: underline;
+}
+.link-button button[type="submit"] {
+  width: 75vw;
+}
+
+/* Media Query */
+@media (max-width: 24em) {
+  .trainers-div {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link-button button[type="submit"] {
+    height: 35px;
+  }
 }

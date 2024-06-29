@@ -17,6 +17,7 @@
   border: 2px solid white;
   border-radius: 8px;
   box-shadow: 1px 1px 50px 1px rgba(27, 27, 27, 0.553);
+  overflow: scroll;
 }
 
 div.content {
@@ -50,6 +51,10 @@ h4 {
 h2 {
   margin: 0 0 40px 0;
 }
+.home-training-packages {
+  box-shadow: 1px 1px 50px 1px rgba(239, 236, 236, 0.553);
+  padding: 10px;
+}
 
 .trainer p,
 .home-training-packages p {
@@ -61,6 +66,65 @@ p {
 }
 
 /* Media Queries For the Home page */
+
+@media (max-width: 68em) {
+  div.content {
+    gap: 23px;
+  }
+  .containers {
+    background-color: rgba(4, 4, 3, 0.698);
+    width: 90vw;
+    height: 65vh;
+  }
+  .trainers {
+    gap: 10px;
+    width: 85vw;
+    height: 65vh;
+  }
+
+  .home-training-packages {
+    padding: 10px;
+    height: 38%;
+    box-shadow: 1px 1px 50px 1px rgba(239, 236, 236, 0.553);
+  }
+  h1 {
+    margin: 0;
+    font-size: x-large;
+  }
+  h4 {
+    margin: 5px 0;
+    font-size: large;
+  }
+
+  p {
+    font-size: small;
+  }
+  button[type="submit"] {
+    width: 65vw;
+    font-size: small;
+  }
+  /* button[type="submit"] a {
+    padding: 2px;
+  } */
+}
+
+@media (max-width: 53em) {
+  .home-training-packages {
+    height: 22%;
+  }
+}
+
+@media (max-width: 48em) {
+  .home-training-packages {
+    height: 34%;
+  }
+}
+
+@media (max-width: 33em) {
+  .home-training-packages {
+    height: 30%;
+  }
+}
 
 @media (max-width: 24em) {
   div.content {
@@ -77,14 +141,13 @@ p {
     height: 50vh;
   }
 
-  .trainer,
   .home-training-packages {
-    height: 30%;
-    width: 80%;
+    padding: 10px;
+    height: 50%;
   }
   h1 {
     margin: 0;
-    font-size: medium;
+    font-size: large;
   }
   h4 {
     margin: 5px 0;
@@ -95,11 +158,7 @@ p {
     font-size: small;
   }
   button[type="submit"] {
-    height: 10%;
     width: 69vw;
     font-size: small;
   }
-  /* button[type="submit"] a {
-    padding: 2px;
-  } */
 }

@@ -5,17 +5,17 @@ import "./styles/trainers.css";
 
 const Trainers = ({ trainers }) => {
   return (
-    <div className="showcases">
+    <div className="trainers-showcases">
       <Nav />
       <hr />
-      <div className="containers">
+      <div className="trainers-containers">
         <h1>Welcome home to Zion Fitness</h1>
-        <div className="content">
+        <div className="trainers-content">
           <div className="trainer-container">
             <h2>
               Select from one of our top trainers to start you fitness journey
             </h2>
-            <div className="trainers">
+            <div className="trainers-div">
               {trainers.map((trainer) => (
                 <div className="trainer" key={trainer._id}>
                   <h4>{trainer.name}</h4>
@@ -27,11 +27,13 @@ const Trainers = ({ trainers }) => {
               ))}
             </div>
           </div>
-          <Link to="/home">
-            <button type="submit">Go back to the Home page</button>
-          </Link>
         </div>
       </div>
+      <Link to="/home">
+        <button className="link-button" type="submit">
+          Go back to the Home page
+        </button>
+      </Link>
     </div>
   );
 };
