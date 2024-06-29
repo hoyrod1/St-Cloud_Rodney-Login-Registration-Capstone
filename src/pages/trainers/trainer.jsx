@@ -21,14 +21,16 @@ const Trainer = () => {
     <div className="showcases">
       <Nav />
       <hr />
-      <div className="containers">
-        <h1>Welcome to {trainer.name}'s' profile</h1>
+      <div className="trainer-container-main">
+        <div className="center-div">
+          <h1>Welcome to {trainer.name}'s profile</h1>
+        </div>
         <div className="trainer-content">
-          <div className="trainer-container">
-            <h3>{trainer.name} is one of the best trainers in the country</h3>
-            <div className="trainers">
-              <div className="trainer">
-                <h4>Code Name {trainer.username}</h4>
+          <div className="trainer-container-div">
+            <h2>{trainer.name} is one of the best trainers in the country</h2>
+            <div className="trainers-main">
+              <div className="trainer-div">
+                <h3>Code Name {trainer.username}</h3>
                 <p> Email: {trainer.email}</p>
                 <div className="reg-log-button">
                   <Link to="/login">
