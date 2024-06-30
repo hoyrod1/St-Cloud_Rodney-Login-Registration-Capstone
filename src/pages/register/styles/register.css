@@ -65,3 +65,28 @@
   color: green;
 }
 /*-------------------------------------*/
+/* MEDIA QUERY */
+
+@media (max-width: 64em) {
+  .register-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 52em) {
+  .register-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 48em) {
+  .register-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 27em) {
+  .lregister-button[type="submit"] {
+    width: 100%;
+  }
+}

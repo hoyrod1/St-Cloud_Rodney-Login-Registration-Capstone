@@ -105,7 +105,9 @@ function Register() {
             />
             <FaLock className="password-lock-icon-2" />
           </div>
-          <button type="submit">Register</button>
+          <button className="register-button" type="submit">
+            Register
+          </button>
           <div className="error-message">
             <p>{registrationError}</p>
           </div>
