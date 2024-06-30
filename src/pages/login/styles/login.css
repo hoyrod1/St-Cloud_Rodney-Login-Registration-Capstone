@@ -72,3 +72,31 @@
 .members p {
   color: white;
 }
+
+/*====================== MEDIA QUERY ======================*/
+@media (max-width: 64em) {
+  .login-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 52em) {
+  .login-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 48em) {
+  .login-button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 27em) {
+  .login-button[type="submit"] {
+    width: 100%;
+  }
+  .register-link {
+    font-size: small;
+  }
+}

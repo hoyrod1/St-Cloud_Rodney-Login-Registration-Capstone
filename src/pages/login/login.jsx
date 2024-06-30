@@ -139,7 +139,9 @@ const LoginForm = ({ members }) => {
               />
               <FaLock className="login-lock-icon" />
             </div>
-            <button type="submit">Login</button>
+            <button className="login-button" type="submit">
+              Login
+            </button>
             <div className="register-link">
               Don't have an account?
               <Link className="register-a-link" to="/register">
