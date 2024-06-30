@@ -8,27 +8,23 @@ const TrainingPackages = ({ trainingPackages }) => {
     <div className="showcases">
       <Nav />
       <hr />
+      <h1 className="training-packages-h1">Welcome home to Zion Fitness</h1>
       <div className="training-packages-containers">
-        <h1>Welcome home to Zion Fitness</h1>
-        <div className="training-packages-content">
-          <div className="trainer-container">
-            <h4>
-              Scroll down to select from one of our top trainers to start you
-              fitness journey
-            </h4>
-            <div className="trainers">
-              {trainingPackages.map((trainingPackage) => (
-                <div className="training-package" key={trainingPackage._id}>
-                  <h4>{trainingPackage.type}</h4>
-                  <h5>Pricing per hour: {trainingPackage.pricePerHour}</h5>
-                  <p>{trainingPackage.description}</p>
-                  <Link to={`/training-packages/${trainingPackage._id}`}>
-                    <button type="submit">Get More Info</button>
-                  </Link>
-                </div>
-              ))}
+        <h2>
+          Scroll down to select from one of our top trainers to start you
+          fitness journey
+        </h2>
+        <div className="training-packages-div">
+          {trainingPackages.map((trainingPackage) => (
+            <div className="training-package" key={trainingPackage._id}>
+              <h4>{trainingPackage.type}</h4>
+              <h5>Pricing per hour: {trainingPackage.pricePerHour}</h5>
+              <p>{trainingPackage.description}</p>
+              <Link to={`/training-packages/${trainingPackage._id}`}>
+                <button type="submit">Get More Info</button>
+              </Link>
             </div>
-          </div>
+          ))}
         </div>
       </div>
       <Link to="/home">

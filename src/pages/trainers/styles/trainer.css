@@ -70,7 +70,7 @@ div.trainer-content {
   width: 20vw;
 }
 
-/* Media Query */
+/*-------------------------------- Media Query --------------------------------*/
 @media (max-width: 64em) {
   .trainer-container-main {
     width: 100%;

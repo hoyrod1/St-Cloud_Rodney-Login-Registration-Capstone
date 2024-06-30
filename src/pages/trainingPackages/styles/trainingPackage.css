@@ -1,0 +1,152 @@
+.training-package-container {
+  background-color: rgba(4, 4, 3, 0.698);
+  width: 90%;
+  height: 40%;
+  margin: 60px auto;
+  padding: 25px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 50px 1px rgb(27, 27, 27);
+  overflow: scroll;
+}
+
+.training-package-h1 {
+  text-shadow: 1px 1px 5px rgb(12, 12, 12);
+}
+
+.training-package-container h2 {
+  text-decoration: underline;
+  color: white;
+  margin: 0 0 5px 0;
+}
+
+.training-package-div {
+  height: 70%;
+}
+
+.training-package {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  margin: 40px auto;
+  box-shadow: 1px 1px 50px 1px rgba(154, 152, 152, 0.533);
+}
+
+.training-package p {
+  margin: 15px 0;
+  color: white;
+}
+
+.home-button[type="submit"] {
+  width: 50vw;
+}
+.reg-log-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.package-login {
+  margin: 10px 0 0 0;
+  width: 40%;
+}
+
+.package-register {
+  margin: 10px 0 0 0;
+  width: 40%;
+}
+
+/*================================ Media Queries ================================*/
+@media (max-width: 80em) {
+  .training-package-container {
+    height: 70%;
+  }
+}
+/*=====================================================*/
+@media (max-width: 64em) {
+  .training-package-container {
+    margin: 10px auto;
+    height: 80%;
+  }
+
+  .training-package-div {
+    height: 74%;
+  }
+
+  .reg-log-buttons {
+    flex-direction: column;
+  }
+  .package-login {
+    width: 100%;
+  }
+
+  .log[type="submit"] {
+    width: 45vw;
+  }
+
+  .reg[type="submit"] {
+    width: 45vw;
+  }
+
+  .package-register {
+    width: 100%;
+  }
+}
+/*=====================================================*/
+@media (max-width: 34em) {
+  .training-package-div {
+    height: 65%;
+  }
+}
+
+/*=====================================================*/
+@media (max-width: 27em) {
+  .training-package-container {
+    height: 65%;
+    margin: 7px auto;
+  }
+  .training-package-container h2 {
+    font-size: medium;
+  }
+
+  .training-package-div {
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .training-package {
+    width: 100%;
+  }
+  .home-button[type="submit"] {
+    width: 90%;
+  }
+  .reg-log-buttons[type="submit"] {
+    gap: 5px;
+  }
+  .reg-log-buttons {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .package-login {
+    width: 100%;
+  }
+
+  .package-register {
+    width: 100%;
+  }
+}
+/*=====================================================*/
+@media (max-width: 26em) {
+  .training-package {
+    margin: 20px auto;
+  }
+  .training-package-container {
+    height: 60%;
+  }
+
+  .training-package-div {
+    height: 75%;
+  }
+}
